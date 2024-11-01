@@ -289,8 +289,11 @@
             <div class="card">
               <div style="display: flex; align-items: center">
                 <div style="flex: 1">
+                  <p><strong>Novel view synthesis performance comparison on the RealEstate10k dataset.</strong> <br>
+                    Our method largely outperforms previous pose-free methods (DUSt3R and Splatt3R) on all overlap settings, and even outperforms SOTA pose-required methods (pixelSplat and MVSplat), especially when the overlap is small.</p>
+                    <br>
                   <img
-                    src="./static/images/nvs_re10k.png"
+                    src="./static/images/nvs_ssim.png"
                     alt="nvs_re10k"
                   />
                 </div>
@@ -302,8 +305,11 @@
             <div class="card">
               <div style="display: flex; align-items: center">
                 <div style="flex: 1">
+                  <p><strong>Out-of-distribution performance comparison.</strong> <br>
+                    Our method shows superior performance when zero-shot evaluation on DTU and ScanNet++ using the model solely trained on RE10k and generalize to DTU and ScanNet++.</p>
+                    <br>
                   <img
-                    src="./static/images/nvs_ood.png"
+                    src="./static/images/ood_nvs.jpg"
                     alt="nvs_ood"
                   />
                 </div>
@@ -315,8 +321,13 @@
             <div class="card">
               <div style="display: flex; align-items: center">
                 <div style="flex: 1">
+                  <p><strong>Pose estimation performance in AUC with various thresholds on RE10k, ACID, and ScanNet-1500.</strong> <br>
+                    Here, NoPoSplat denotes our method trained on RE10k, and NoPoSplat* denotes our method trained on both RE10k and DL3DV. <br>
+                    Our method achieves the best results across all datasets. Notably, our model is not trained on ACID or ScanNet. <br>
+                    Furthermore, our method does not require an explicit matching loss during training, meaning no ground truth depth is necessary.</p>
+                    <br>
                   <img
-                    src="./static/images/pose_estimation.png"
+                    src="./static/images/pose_estimation.jpg"
                     alt="pose_estimation"
                   />
                 </div>
